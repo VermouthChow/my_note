@@ -1,9 +1,10 @@
 # my_note
-a note for fun
+a shell notebook for fun
 
 linux OR mac.  
-env ruby
+env ruby & vim
 
-first, alias nt=~/MyNote/nt.sh  
+
+alias nt=~/MyNote/nt.sh  
 chmod -u+x ~/MyNote/nt.sh if Permission denied  
 $`nt help ` 
