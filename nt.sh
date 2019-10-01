@@ -11,7 +11,8 @@ class MyNote
     Dir.mkdir(CONTENT_PATH) unless Dir.exist?(CONTENT_PATH)
 
     def call
-        VALID_ARGV_1.include?(ARGV.first) ? send(ARGV.first) : error_handler('no such command')
+        first = VALID_ARGV_1.include?(ARGV.first) ? ARGV.first : 'help' 
+        send(first)
     end
 
     private
@@ -19,11 +20,6 @@ class MyNote
     def help
         note = <<-EOF
 
-        first, alias nt=#path/nt.sh
-        chmod -u+x #path/nt.sh if Permission denied
-
-        params:
-        
         l                 - list the note
         n file_name       - edit a note OR create a note
         e file_name       - edit a note OR create a note
