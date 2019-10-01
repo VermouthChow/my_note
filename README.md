@@ -5,6 +5,6 @@ linux OR mac.
 env ruby & vim  
 
 ```
-$ alias nt=./...../nt.sh    
-$ nt help`    
+$ alias nt=#path/nt.sh    
+$ nt help  
 ```
