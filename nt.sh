@@ -19,8 +19,8 @@ class MyNote
     def help
         note = <<-EOF
 
-        first, alias nt=~/MyNote/nt.sh
-        chmod -u+x ~/MyNote/nt.sh if Permission denied
+        first, alias nt=#path/nt.sh
+        chmod -u+x #path/nt.sh if Permission denied
 
         params:
         
