@@ -39,8 +39,7 @@ class MyNote
 
     def files
         FileUtils.cd(CONTENT_PATH) do
-            fs = `ls -l | grep -v ^d|awk '{print $9}'`
-            puts fs.gsub("\n", "    ")
+            puts `ls -l | grep -v ^d|awk '{print $9}'`
         end
     end
 
